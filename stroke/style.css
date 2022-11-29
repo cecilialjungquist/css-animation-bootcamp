@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+svg rect {
+    fill: none;
+    stroke: rgba(196, 196, 196, 0.722);
+    stroke-width: 8px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: rect-animation 5s ease-in-out forwards;
+}
+
+/* LINES */
+
+svg line {
+    stroke: rgba(196, 196, 196, 0.722);
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: line-animation 3s forwards ;
+}
+
+
+/* GBG TEXT */
+
+#title path {
+    fill: rgba(196, 196, 196, 0.722);
+    opacity: 0;
+    animation: text-fade 2s ease-in 4s forwards;
+}
+
+
+@keyframes text-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rect-animation {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes line-animation {
+    from {
+        stroke-dashoffset: 350;
+    }
+    to {
+        stroke-dashoffset: -250;
+    }
+}

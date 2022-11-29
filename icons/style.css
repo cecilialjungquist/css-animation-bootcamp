@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: 500px;
+    height: 200px;
+}
+
+.twitter-icon-group, .youtube-icon-group:hover, .facebook-icon-group:hover {
+    cursor: pointer;
+}
+
+/* TWITTER ICON GROUP */
+
+.twitter-outline,
+.twitter-icon {
+    transition: all 2s;
+    transform-origin: 22%;
+}
+
+
+.twitter-icon-group:hover .twitter-outline {
+    transform: scale(0);
+}
+
+.twitter-icon-group:hover .twitter-icon {
+    transform: scale(2);
+    stroke: #4099ff;
+    opacity: 0;
+}
+
+/* YOUTUBE ICON GROUP */
+
+.youtube-outline,
+.youtube-icon,
+.youtube-inner-cirle {
+    transition: all 2s;
+    transform-origin: 50%;
+}
+
+.youtube-icon-group:hover .youtube-outline {
+    transform: scale(1.2);
+}
+
+.youtube-icon-group:hover .youtube-inner-circle { 
+    fill: #F26768;
+}
+
+.youtube-icon-group:hover .youtube-icon {
+    fill: white;
+}
+
+/* FACEBOOK ICON GROUP */
+
+.facebook-detail,
+.facebook-outline {
+    transition: all 2s;
+    transform-origin: 78%;
+}
+
+.facebook-detail {
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-outline {
+    transform: scale(1.8);      
+    opacity: 0
+}
+
+.facebook-icon-group:hover .facebook-detail {
+    transform: scale(0.8);      
+    opacity: 1;
+}
+
