@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(169, 61, 61);
+    border-radius: 50%;
+}
+
+section {
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+nav {
+    display: none;
+    background-color: rgb(48, 48, 48);
+    width: 20rem;
+    padding: 4rem 1.5rem 1.5rem 3rem;
+    color: rgb(191, 191, 191);
+    border-radius: 0 6px 6px 0;
+}
+
+h3 {
+    margin-bottom: .5rem;
+}
+
+li {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    animation: slide 2s ease-in 200ms forwards;
+    opacity: 0;
+}
+
+li::marker {
+    content: attr(marker);
+}
+
+li:nth-of-type(1) {
+    animation-delay: 600ms;
+}
+li:nth-of-type(2) {
+    animation-delay: 1s;
+}
+li:nth-of-type(3) {
+    animation-delay: 1.4s;
+}
+li:nth-of-type(4) {
+    animation-delay: 1.8s;
+}
+
+.open {
+    display: block;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
