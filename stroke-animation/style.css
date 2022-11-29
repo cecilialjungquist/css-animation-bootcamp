@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(26, 26, 26);
+    --primary-text-color: #fff;
+    --secondary-text-color: rgb(216, 146, 157);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+path {
+    stroke-dasharray: 604;  /* Ska gå till 604, kan ta två värden */
+    animation: draw 5s infinite reverse; /* Reverse för att rita upp */
+    stroke: rgb(150, 243, 255);
+    fill: rgb(2, 29, 149);
+    stroke-width: .5px;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: -603; /* Minus för att den inte ska vara uppritad redan */
+    }
+}
+
