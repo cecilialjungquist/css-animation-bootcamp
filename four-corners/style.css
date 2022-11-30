@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.big {
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(223, 223, 223);
+}
+
+.small {
+    width: 3rem;
+    height: 3rem;
+    background-color: green;
+    will-change: transform, background-color;
+    animation: cube-move 4s linear 100ms infinite;
+}
+
+.big:hover .small {
+    animation-direction: reverse;
+    cursor: pointer;
+}
+
+@keyframes cube-move {
+    0%{
+        transform: translate(0,0);
+        animation-timing-function: ease-in-out;
+    }
+    25% {
+        transform: translate(47rem,0);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: translate(47rem,47rem);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: translate(0,47rem);
+        animation-timing-function: ease-in-out;
+    }
+
+    0%, 25%{
+        background-color: green;
+    }
+    26%, 50% {
+        background-color: blue;
+    }
+    51%, 75% {
+        background-color: red;
+    }
+    76%, 100% {
+        background-color: yellow;
+    }
+}
