@@ -8,7 +8,6 @@
     margin: 6rem auto;
     min-height: 20rem;
     width: 30rem;
-    transition: 2s;
     display: flex;
     justify-content: center;
 }
