@@ -12,10 +12,11 @@
     justify-content: center;
 }
 
-section{
-    width: 14rem;
-    height: 20rem;
-    transition: 2s;
+section {
+    width: 12rem;
+    height: 18rem;
+    transition: transform 2s, box-shadow 2s;
+    will-change: transform;
 }
 
 .pink {
