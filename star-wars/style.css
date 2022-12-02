@@ -19,7 +19,7 @@ body {
     position: absolute;
     width: 100%;
     top: 100vh;
-    animation: storm-trooper 10s linear 100ms forwards;
+    animation: storm-trooper 10s linear 100ms infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ p {
         opacity: 1;
     }
     100% {
-        transform: translateY(90vh) rotateX(30deg) scale(0);
+        transform: translateY(-1000px) rotateX(30deg) scale(0);
         opacity: 1;
     }
 }

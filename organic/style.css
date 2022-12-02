@@ -10,13 +10,13 @@ body {
 }
 
 .wrapper {
-   /* animation: rotate 10s linear  infinite; */
+   animation: rotate 10s linear  infinite;
 }
 
 .circle__section {
     position: relative;
     margin-top: 10rem;
-    transform: rotateY(70deg) rotateX(-10deg);
+    transform: rotateY(60deg) rotateX(-30deg);
 }
 
 .circle {
@@ -25,7 +25,7 @@ body {
     left: 50%;
     border: 1px dotted white;
     border-radius: 50%;
-    animation: wave 1s linear infinite alternate ;
+    animation: wave 500ms linear infinite alternate ;
     transform-origin: top;
 }
 
@@ -73,12 +73,10 @@ body {
 
 @keyframes wave {
     from {
-        transform: scale(1) translate(-40%, -40%);
+        transform: scale(1) translate(-77%, -77%);
     }
     to {
-        transform: scale(1.5) translate(-40%, -40%);
-        /* transform: skewX(0) skewY(0) rotateX(0deg); */
-        /* skewX(5deg) skewY(5deg) rotateX(0deg) */
+        transform: scale(1.5) translate(-0%, -37%);
     }
     
 }
