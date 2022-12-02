@@ -11,15 +11,14 @@ body {
     background-image: url(./jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
     overflow: hidden;
-    perspective: 150px;
+    perspective: 80px;
     position: relative;
 }
 
 .wrapper {
     position: absolute;
     width: 100%;
-    top: 100vh;
-    animation: storm-trooper 10s linear 100ms infinite;
+    animation: storm-trooper 100s linear 100ms infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,16 +40,15 @@ p {
     letter-spacing: 2px;
     line-height: 1.3em;
     text-align: justify;
-    max-width: 70vw;
 }
 
 @keyframes storm-trooper {
     0% {
-        transform: translateY(0) rotateX(30deg) scale(1);
+        transform: rotateX(30deg) translateY(1000px) scale(1);
         opacity: 1;
     }
     100% {
-        transform: translateY(-1000px) rotateX(30deg) scale(0);
+        transform: rotateX(30deg) translateY(-3000px) scale(0);
         opacity: 1;
     }
 }
